@@ -1,7 +1,4 @@
 {
-	"id": "elmah.io.apps.slack",
-	"name": "Slack",
-	"description": "Post a new chat message to Slack when errors occur",
 	"variables": [{
 		"name": "token",
 		"description": "An access token from Slack needed to call the Slack API",

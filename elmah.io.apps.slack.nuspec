@@ -3,7 +3,7 @@
   <metadata>
     <version>$version$</version>
     <authors>elmah.io</authors>
-    <owners />
+    <owners>elmah.io</owners>
     <id>elmah.io.apps.slack</id>
     <title>Slack Integration</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

@@ -1,2 +1,1 @@
-# elmah.io.apps.slack
-Integrates Slack with elmah.io
+# Slack integration for elmah.ioIntegrates Slack with elmah.io. To install the integration, go to the Apps tab on your log settings and add this app.

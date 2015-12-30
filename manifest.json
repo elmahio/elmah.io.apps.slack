@@ -3,12 +3,14 @@
 		"key": "token",
 		"name": "Token",
 		"description": "An access token from Slack needed to call the Slack API",
+		"example": "abcd-1234567890-1234567890-1234567890-1234567890",
 		"type": "text",
 		"required": true
 	}, {
 		"key": "channel",
 		"name": "Channel",
-		"description": "A hash-less channel name for Slack (example: general)",
+		"description": "A hash-less channel name for Slack",
+		"example": "general",
 		"type": "text",
 		"required": false
 	}],

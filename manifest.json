@@ -1,11 +1,13 @@
 {
 	"variables": [{
-		"name": "token",
+		"key": "token",
+		"name": "Token",
 		"description": "An access token from Slack needed to call the Slack API",
 		"type": "text",
 		"required": true
 	}, {
-		"name": "channel",
+		"key": "channel",
+		"name": "Channel",
 		"description": "A hash-less channel name for Slack (example: general)",
 		"type": "text",
 		"required": false

@@ -2,12 +2,12 @@
 	"variables": [{
 		"name": "token",
 		"description": "An access token from Slack needed to call the Slack API",
-		"type": "string",
+		"type": "text",
 		"required": true
 	}, {
 		"name": "channel",
-		"description": "An URL encoded channel name for Slack (example: %23general)",
-		"type": "string",
+		"description": "A hash-less channel name for Slack (example: general)",
+		"type": "text",
 		"required": false
 	}],
 	"rule": {
@@ -15,7 +15,7 @@
 		"query": "severity: Error OR severity: Fatal",
 		"then": {
 			"type": "http",
-			"url": "https://slack.com/api/chat.postMessage?token=$token&channel=$channel&text=$message&username=elmah.io&icon_url=https://elmah.io/icons/AppIcon50x50.png",
+			"url": "https://slack.com/api/chat.postMessage?token=$token&channel=%23$channel&text=$message&username=elmah.io&icon_url=https://elmah.io/icons/AppIcon50x50.png",
 			"method": "post"
 		}
 	}

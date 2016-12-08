@@ -1,26 +1,14 @@
 {
-	"variables": [{
-		"key": "token",
-		"name": "Token",
-		"description": "An access token from Slack needed to call the Slack API",
-		"example": "abcd-1234567890-1234567890-1234567890-1234567890",
-		"type": "text",
-		"required": true
-	}, {
-		"key": "channel",
-		"name": "Channel",
-		"description": "A hash-less channel name for Slack",
-		"example": "general",
-		"type": "text",
-		"required": false
-	}],
+	"variables": [],
 	"rule": {
 		"title": "Post a message to Slack on all new errors",
 		"query": "isNew:true AND (severity:Error OR severity:Fatal)",
 		"then": {
 			"type": "http",
-			"url": "https://slack.com/api/chat.postMessage?token=$token&channel=%23$channel&text=$message&username=elmah.io&icon_url=https://elmah.io/icons/AppIcon50x50.png",
-			"method": "post"
+			"url": "$webhookUrl",
+			"method": "post",
+			"contentType": "application/json",
+			"body": "{\"text\": \"$message\"}"
 		}
 	}
 }

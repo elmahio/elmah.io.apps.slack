@@ -8,7 +8,7 @@
 			"url": "$webhookUrl",
 			"method": "post",
 			"contentType": "application/json",
-			"body": "{\"text\": \"$message\"}"
+			"body": "{\"text\": \"<https://elmah.io/errorlog/error?logid=$logId&id=$id|New error in $logName>\", \"attachments\": [ { \"fallback\": \"$detail\", \"color\": \"#e6614f\", \"fields\": [ { \"title\": \"Error\", \"value\": \"$message\", \"short\": false }, { \"title\": \"Type\", \"value\": \"$type\", \"short\": false }, { \"title\": \"URL\", \"value\": \"$method $url\", \"short\": false }, { \"title\": \"Details\", \"value\": \"$detail\", \"short\": false } ] } ] }"
 		}
 	}
 }

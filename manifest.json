@@ -8,7 +8,7 @@
 			"url": "$webhookUrl",
 			"method": "post",
 			"contentType": "application/json",
-			"body": "{\"text\": \"<https://elmah.io/errorlog/error?logid=$logId&id=$id|New $severity in $logName>\", \"attachments\": [ { \"fallback\": \"$detail\", \"color\": \"$severityHex\", \"fields\": [ { \"title\": \"Message\", \"value\": \"$message\", \"short\": false }, { \"title\": \"Type\", \"value\": \"$type\", \"short\": false }, { \"title\": \"Application\", \"value\": \"$applicationName\", \"short\": false }, { \"title\": \"URL\", \"value\": \"`$method` $url :arrow_right: $statusCode\", \"short\": false }, { \"title\": \"Details\", \"value\": \"$detail\", \"short\": false } ] } ] }"
+			"body": "{\"text\": \"<https://elmah.io/errorlog/error?logid=$logId&id=$id|New $severity in $logName>\", \"attachments\": [ { \"fallback\": \"$detail\", \"color\": \"$severityHex\", \"fields\": [ { \"title\": \"Message\", \"value\": \"$message\", \"short\": false }, { \"title\": \"Type\", \"value\": \"$type\", \"short\": false }, { \"title\": \"Application\", \"value\": \"$applicationName\", \"short\": false }, { \"title\": \"URL\", \"value\": \"`$method` $url :arrow_right: $statusCode\", \"short\": false }, { \"title\": \"Details\", \"value\": \"```$detail```\", \"short\": false } ] } ] }"
 		}
 	}
 }

@@ -10,7 +10,7 @@
     <description>Post a new chat message to Slack when errors occur on elmah.io.</description>
     <projectUrl>https://github.com/elmahio/elmah.io.apps.slack</projectUrl>
     <iconUrl>https://elmah.io/images/appstore/elmah.io.apps.slack.png</iconUrl>
-	<tags>Error Exception Reporing Management Logging ELMAH Diagnostics Tracing Slack</tags>
+	<tags>Error Exception Reporting Management Logging ELMAH Diagnostics Tracing Slack</tags>
   </metadata>
   <files>
     <file src="manifest.json" target="manifest.json" />

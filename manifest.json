@@ -2,7 +2,7 @@
 	"variables": [],
 	"rule": {
 		"title": "Post a message to Slack on all new errors",
-		"query": "(isNew:true AND (severity:Error OR severity:Fatal)) OR applicationName:\"Uptime Monitoring\"",
+		"query": "(isNew:true AND (severity:Error OR severity:Fatal)) OR applicationName.raw:\"Uptime Monitoring\"",
 		"then": {
 			"type": "http",
 			"url": "$webhookUrl",

@@ -1,5 +1,4 @@
 {
-	"helpUrl": "https://docs.elmah.io/elmah-io-apps-slack/",
 	"variables": [],
 	"rule": {
 		"title": "Post a message to Slack on all new errors",

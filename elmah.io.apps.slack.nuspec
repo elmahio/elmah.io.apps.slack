@@ -8,9 +8,10 @@
     <title>Slack Integration</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Post a new chat message to Slack when errors occur on elmah.io.</description>
-    <projectUrl>https://github.com/elmahio/elmah.io.apps.slack</projectUrl>
+    <projectUrl>https://elmah.io/</projectUrl>
+    <repository type="git" url="https://github.com/elmahio/elmah.io.apps.slack" />
     <iconUrl>https://elmah.io/images/appstore/elmah.io.apps.slack.png</iconUrl>
-	<tags>Error Exception Reporting Management Logging ELMAH Diagnostics Tracing Slack</tags>
+    <tags>Error Exception Reporting Management Logging ELMAH Diagnostics Tracing Slack</tags>
   </metadata>
   <files>
     <file src="manifest.json" target="manifest.json" />

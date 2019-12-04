@@ -1,8 +1,23 @@
 {
-	"variables": [],
+	"variables": [{
+		"key": "webhookUrl",
+		"type": "hidden"
+	},{
+		"key": "uptimeEnabled",
+		"name": "Uptime Monitoring",
+		"description": "Include both errors and information messages from Uptime Monitoring",
+		"type": "bool",
+		"default": "true"
+	},{
+		"key": "heartbeatEnabled",
+		"name": "Heartbeats",
+		"description": "Include both errors and information messages from Heartbeats",
+		"type": "bool",
+		"default": "true"
+	}],
 	"rule": {
 		"title": "Post a message to Slack on all new errors",
-		"query": "(isNew:true AND (severity:Error OR severity:Fatal)) OR applicationName.raw:\"Uptime Monitoring\"",
+		"query": "(isNew:true AND (severity:Error OR severity:Fatal)) OR isUptime:$uptimeEnabled OR isHeartbeat:$heartbeatEnabled",
 		"then": {
 			"type": "http",
 			"url": "$webhookUrl",
